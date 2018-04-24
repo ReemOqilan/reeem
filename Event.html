@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA
+    95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-filestyle.min.js"> </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+</head>
+
+<body>
+<div class="container">
+<h2>Publish New Event</h2>
+    <form class="form-horizontal" role="form" action="process.php" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name1" class="col-sm-2 control-label">Name of Event :</label>
+        <div class="col-sm-4">
+          <input type="name" class="form-control inputstl" id="name1" placeholder="Enter name of event">
+        </div>
+      </div>
+        <div class="form-group">
+        <label for="gender1" class="col-sm-2 control-label">Gender:</label>
+        <div class="col-sm-2">
+        <select class="form-control inputstl" id="gender1">
+          <option>Male</option>
+          <option>Female</option>
+        </select>          
+          
+        </div>
+      </div>  
+      
+            <div class="form-group">
+        <label for="address1" class="col-sm-2 control-label">Place of the even:</label>
+        <div class="col-sm-5">
+          <input type="Name" class="form-control inputstl" id="address1" placeholder="Full Address">
+        </div>
+      </div> 
+      <div class="form-group">
+		<label for="message" class="col-sm-2 control-label">Event information :</label>
+		<div class="col-sm-10">
+			<textarea class="form-control" rows="4" name="message"></textarea>
+		</div>
+	</div>
+        
+       <label for="gender1" class="col-sm-2 control-label">Is there a certificate?:</label>
+   
+   <div class="radio">
+   <label>
+    <input type="radio" name="survey" id="Radios1" value="Yes">
+    Yes
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="survey" id="Radios2" value="No">
+    No
+  </label>
+
+</div>
+     
+           
+
+      <div class="form-group">
+        <label for="selphoto" class="col-sm-2 control-label">Select a File to upload:</label>
+        <div class="col-sm-5">
+          <input type="file" class="inputstl" id="selphoto" name="sentfile">
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" class="inputstl"> Do you want to save the information
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-4">
+          <button type="submit" class="btn btn-lg btn-block btn-primary">Publish</button>
+        </div>
+      </div>
+    </form>
+   </div> 
+<script>
+			$('#selphoto').filestyle({
+				buttonName : 'btn-primary',
+                buttonText : ' Upload an Image',
+                iconName : 'glyphicon glyphicon-upload'
+			});
+</script>   
+
+
+	
+</body>
+</html>
